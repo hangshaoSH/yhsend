@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="t1q-rd-xTj">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.10000000149011612" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qhz-a7-H2o">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日统计" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOZ-qM-dos">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLo-tY-jkG">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="OOp-9c-one"/>
+                        <constraint firstAttribute="height" constant="44" id="ykV-He-rEh"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="11" minY="10" maxX="10" maxY="11"/>
+                    <state key="normal" image="tongji_refresh_normal"/>
+                    <state key="selected" image="tongji_refresh_select"/>
+                </button>
+                <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqH-Od-uJy">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="cEL-Ef-gvx"/>
+                        <constraint firstAttribute="height" constant="44" id="hPq-kI-vFg"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="11" maxY="11"/>
+                    <state key="normal" image="tongji_home_normal"/>
+                    <state key="selected" image="tongji_home_select"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.90980392160000001" green="0.29411764709999999" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Qhz-a7-H2o" firstAttribute="leading" secondItem="t1q-rd-xTj" secondAttribute="leading" id="4w1-Di-Imc"/>
+                <constraint firstItem="iOZ-qM-dos" firstAttribute="top" secondItem="t1q-rd-xTj" secondAttribute="top" constant="32" id="5I6-bZ-utE"/>
+                <constraint firstItem="Qhz-a7-H2o" firstAttribute="top" secondItem="t1q-rd-xTj" secondAttribute="top" constant="64" id="AEp-aA-81R"/>
+                <constraint firstAttribute="trailing" secondItem="HLo-tY-jkG" secondAttribute="trailing" constant="5" id="El6-K3-VTB"/>
+                <constraint firstAttribute="trailing" secondItem="Qhz-a7-H2o" secondAttribute="trailing" id="Ivt-41-5rG"/>
+                <constraint firstItem="uqH-Od-uJy" firstAttribute="centerY" secondItem="iOZ-qM-dos" secondAttribute="centerY" id="KZF-jV-vll"/>
+                <constraint firstAttribute="bottom" secondItem="Qhz-a7-H2o" secondAttribute="bottom" id="Z7l-lE-nM9"/>
+                <constraint firstItem="uqH-Od-uJy" firstAttribute="leading" secondItem="t1q-rd-xTj" secondAttribute="leading" constant="5" id="bN2-3s-cza"/>
+                <constraint firstItem="HLo-tY-jkG" firstAttribute="centerY" secondItem="iOZ-qM-dos" secondAttribute="centerY" id="l44-0r-D3K"/>
+                <constraint firstItem="iOZ-qM-dos" firstAttribute="centerX" secondItem="t1q-rd-xTj" secondAttribute="centerX" id="vFd-m9-KMZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="282" y="103"/>
+        </view>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TJTongJiWebCell" id="RS4-Kf-aTk" customClass="TJTongJiWebTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RS4-Kf-aTk" id="hPW-08-axl">
+                <frame key="frameInset" width="375" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZrU-M8-gU5">
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </webView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ZrU-M8-gU5" secondAttribute="trailing" id="EFZ-8Z-fmF"/>
+                    <constraint firstItem="ZrU-M8-gU5" firstAttribute="top" secondItem="hPW-08-axl" secondAttribute="top" id="Gyi-e1-clN"/>
+                    <constraint firstItem="ZrU-M8-gU5" firstAttribute="leading" secondItem="hPW-08-axl" secondAttribute="leading" id="aFZ-tm-Ipk"/>
+                    <constraint firstAttribute="bottom" secondItem="ZrU-M8-gU5" secondAttribute="bottom" id="viB-yI-eyY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="tongjiweb" destination="ZrU-M8-gU5" id="7Gt-0E-dte"/>
+            </connections>
+            <point key="canvasLocation" x="303" y="292"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="tongji_home_normal" width="50" height="50"/>
+        <image name="tongji_home_select" width="50" height="50"/>
+        <image name="tongji_refresh_normal" width="50" height="50"/>
+        <image name="tongji_refresh_select" width="50" height="50"/>
+    </resources>
+</document>

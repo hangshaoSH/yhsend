@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fdU-Sb-AhU">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhZ-k8-Ae2">
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.29411764709999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="Ewx-V0-uZr"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beT-2q-kh1">
+                    <color key="backgroundColor" red="0.90980392160000001" green="0.29411764709999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="Q3Y-5q-Bli"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择户籍地址" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvF-QB-6Ve">
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view tag="101" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWi-g3-C1g">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hhZ-k8-Ae2" firstAttribute="leading" secondItem="fdU-Sb-AhU" secondAttribute="leading" constant="26" id="04p-G8-LHf"/>
+                <constraint firstItem="qWi-g3-C1g" firstAttribute="top" secondItem="dvF-QB-6Ve" secondAttribute="bottom" constant="25" id="5QR-pl-0K8"/>
+                <constraint firstAttribute="trailing" secondItem="qWi-g3-C1g" secondAttribute="trailing" id="95F-lR-5Lr"/>
+                <constraint firstAttribute="trailing" secondItem="beT-2q-kh1" secondAttribute="trailing" constant="26" id="KfG-m2-iVV"/>
+                <constraint firstItem="beT-2q-kh1" firstAttribute="width" secondItem="hhZ-k8-Ae2" secondAttribute="width" id="RCH-eH-nb5"/>
+                <constraint firstItem="beT-2q-kh1" firstAttribute="top" secondItem="qWi-g3-C1g" secondAttribute="bottom" constant="25" id="Uia-Ab-3a8"/>
+                <constraint firstItem="beT-2q-kh1" firstAttribute="leading" secondItem="hhZ-k8-Ae2" secondAttribute="trailing" constant="26" id="XHD-ai-agS"/>
+                <constraint firstAttribute="bottom" secondItem="hhZ-k8-Ae2" secondAttribute="bottom" constant="16" id="fdK-TP-2fP"/>
+                <constraint firstAttribute="bottom" secondItem="beT-2q-kh1" secondAttribute="bottom" constant="16" id="jRb-Mg-IzO"/>
+                <constraint firstItem="dvF-QB-6Ve" firstAttribute="top" secondItem="fdU-Sb-AhU" secondAttribute="top" constant="25" id="l3x-dz-b3f"/>
+                <constraint firstItem="qWi-g3-C1g" firstAttribute="leading" secondItem="fdU-Sb-AhU" secondAttribute="leading" id="mfs-Vd-iyp"/>
+                <constraint firstItem="dvF-QB-6Ve" firstAttribute="leading" secondItem="fdU-Sb-AhU" secondAttribute="leading" constant="20" id="sFm-Or-XjK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="273.5" y="196"/>
+        </view>
+    </objects>
+</document>
